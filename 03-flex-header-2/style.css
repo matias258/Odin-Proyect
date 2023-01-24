@@ -1,0 +1,88 @@
+/* this is some magical font-importing.  
+you'll learn about it later. */
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+  margin: 0;
+  background: #eee;
+  font-family: Besley, serif;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  /* respuesta*/
+  display: flex;
+  flex-direction: row;
+  flex-shrink:0;
+  min-width: 0;
+}
+/*starteo el flex, luego pido que sea en row
+  luego defino shrink -> cuando se resizea la pag no quede tan feo
+  min-width -> para que haya un minimo q puedan resizear y no se solapen los objetos
+ */
+
+
+
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+
+  /* respuesta */
+  display: flex;
+  justify-content: end; /* para que el circulo este al final horizontalmente                       */
+  align-self: start;    /* para que el circulo este al principio verticalmente                     */
+  flex-shrink:0;        /* estos 2 son para q no se deformara el circulo cuando resizeabamos la pag*/
+  min-width: 0;
+  margin: 6px;          /* quedaba muy por abajo del new notification (button)                     */
+}
+
+
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+
+  /* respuesta */
+  display: flex;
+  justify-content: start;   /* tiene que ir al comienzo horizontalmente */
+  align-self: start;        /* tiene que ir al comienzo verticalmente   */
+  margin-left: 3px;         /* separo su margen del lado izq            */
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: rebeccapurple;
+  color: white;
+  padding: 8px 24px;
+
+  /* respuesta */
+  display: flex;
+  justify-self: end;      /* tiene que ir al final horizontalmente   */
+  align-self: start;      /* tiene que ir al principio verticalmente */
+  margin: 12px;           /* si no, estaba muy pegado al techo       */
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+
+
+}
+
+ul {
+  list-style-type: none;
+
+  /* respuesta */
+  display: flex;
+  gap: 15px;              /* espacios entre los diferentes links                                  */
+  margin-right: auto;     /* FUNDAMENTAL, sin esto los de la derecha terminan pegados a los links */
+}
