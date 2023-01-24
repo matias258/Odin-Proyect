@@ -1,0 +1,57 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/* do not edit this footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+/* respuesta */
+
+body{
+  text-align: center;
+}
+
+.title{
+  margin-bottom: 29px;
+}
+
+
+/* contiene todas las img y textos */
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info{
+  /* no hace falta ponerle nada pues ya se ve como deberia
+     pero, necesitamos crearlo sino no se sabe que contiene el
+     container, y las imagenes y los textos no van a estar alineados
+   */
+}
+
+
+
+
+
+
