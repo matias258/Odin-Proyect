@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+/* respuesta */
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  padding: 8px 16px;
+  background: #ee6924;
+}
+
+/* la img, el input y los thing */
+.content{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* agarro los atributos "a" */
+a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between; /* splitea en las esquinas los a */
+  padding: 16px; /* los reacomoda bien */
+  background: #eebd60;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+
+/* I know its not the same but i couldn t resist playing
+   for a bit by customazing it.
+   It may look ugly for you, but i kinda liked it :D
+
+   I also struggled hard in this one, so i had to copy some
+   things from the solution.css, shame on me!
+ */
+
+
+
+
+
