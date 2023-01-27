@@ -103,6 +103,9 @@ a{
     font-weight: bold;
     font-size: 26px;
     padding-right: 140px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .pp{
